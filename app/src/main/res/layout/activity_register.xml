@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bgb"
+    tools:context="com.example.preethi.logintest.Register">
+
+    <EditText
+        android:hint="First Name"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:inputType="textPersonName"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:id="@+id/editText7"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_marginTop="53dp" />
+
+    <EditText
+        android:hint="Initial"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:inputType="textPersonName"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/editText7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+
+    <EditText
+        android:hint="Age"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:inputType="textPersonName"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_below="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_marginTop="28dp" />
+
+    <Button
+        android:text="Take Off"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="normal|bold|italic"
+        android:onClick="OnReg"
+        android:textSize="18sp" />
+
+    <EditText
+        android:hint="User Name"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:inputType="textPersonName"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/editText6"
+        android:layout_alignStart="@+id/editText4" />
+
+    <TextView
+        android:text="Register Form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:id="@+id/textView2"
+        android:fontFamily="cursive"
+        android:textSize="35sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="normal|bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:hint="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:inputType="textPersonName"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:textColor="?android:attr/textColorPrimaryDisableOnly"
+        android:layout_marginBottom="42dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignStart="@+id/editText5" />
+</RelativeLayout>
